@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left {
+    position: absolute;
+    left: 0;
+    background-color: pink;
+    background-image: url("https://cdn.shopify.com/s/files/1/0282/8510/8356/products/IPHONE12prographite-pink_900x.png?v=1645265330");
+    background-size: cover;
+}
+
+.split.right {
+    position: absolute;
+    right: 0;
+    background-color: skyblue;
+    background-image: url("https://images.priceoye.pk/samsung-galaxy-s21-ultra-pakistan-priceoye-ps2pg-500x500.webp");
+    background-size: cover;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+h1 {
+    font-size: 100px;
+    backdrop-filter: brightness(0.5);
+    color: aliceblue;
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+.active-right .left {
+    width: 25%;
+}
+
+.active-right .right {
+    width: 75%;
+}
+
+.left, .right {
+    transition: 1.5s;
+}
